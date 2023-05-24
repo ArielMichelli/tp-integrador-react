@@ -15,7 +15,7 @@ const Navegacion = () => {
   // }
 
   return (
-    <Navbar className="navbar negro">
+    <Navbar className="navbar navbar-dark negro">
       <Container fluid>
         <Navbar.Brand href="/">
           <img className="logo" src="./Netflix.png"></img>
