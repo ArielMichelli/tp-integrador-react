@@ -65,5 +65,4 @@ const Navegacion = () => {
     </Navbar>
   );
 };
-
 export default Navegacion;
