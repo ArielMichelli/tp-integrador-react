@@ -38,7 +38,7 @@ const ProfileMenu = (params) => {
                 logOut()
               }}
             >
-              <a className='nav-link' href='#'>Cerrar sesion en Netflix</a>
+              <a className='nav-link' href='/'>Cerrar sesion en Netflix</a>
             </li>
           </ul>
         </div>
