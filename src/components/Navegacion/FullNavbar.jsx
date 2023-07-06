@@ -40,6 +40,7 @@ const FullNavBar = () => {
             </Link>
             {/* <Nav.Link href="#Idiomas">Explora por idiomas</Nav.Link> */}
             <Dropdown className='nav-item dropdown'>
+              <i className='bi bi-globe2 text-white px-2' />
               <Dropdown.Toggle variant='bg-dark border-secondary text-light' id='dropdown-autoclose-true'>
                 Español
               </Dropdown.Toggle>
@@ -51,10 +52,10 @@ const FullNavBar = () => {
 
           </Nav>
 
-          <Nav className="justify-content-end" activeKey="/home">
+          <Nav className='justify-content-end' activeKey='/home'>
             <SearchBar />
-            <Nav.Link className="px-2" href="/buscar" passHref>
-              <i className="bi bi-search"></i>
+            <Nav.Link className='px-2' href='/buscar' passHref>
+              <i className='bi bi-search' />
             </Nav.Link>
             <Nav.Link>
               <i className='bi bi-lightbulb' />

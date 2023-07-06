@@ -208,3 +208,17 @@ display: block;
   color: white ;
   font-weight: bold;
 }
+
+/* estilos de home           */ 
+#contenido {
+  padding-left: 110px;
+  padding-right: 110px;
+  padding-bottom: 30px;
+  padding-top: 30px; 
+}
+
+#tituloInicio {
+  text-align:center;
+  align-items: center;
+  
+}
