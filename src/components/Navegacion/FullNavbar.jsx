@@ -40,6 +40,7 @@ const FullNavBar = () => {
             </Link>
             {/* <Nav.Link href="#Idiomas">Explora por idiomas</Nav.Link> */}
             <Dropdown className='nav-item dropdown'>
+              <i className='bi bi-globe2 text-white px-2' />
               <Dropdown.Toggle variant='bg-dark border-secondary text-light' id='dropdown-autoclose-true'>
                 Español
               </Dropdown.Toggle>
