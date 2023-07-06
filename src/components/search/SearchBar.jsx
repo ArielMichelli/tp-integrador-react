@@ -3,20 +3,19 @@ import{ useState } from "react";
 import { useRouter } from 'next/router'
 
 import Form from 'react-bootstrap/Form';
-import { getMovieByName } from "./getMovieByName";
+
 
 export default function SearchBar(){
   const [searchValue, setSearchValue] = useState('');
   const router = useRouter()
 
   const handlerSubmit = (e)=>{
-    e.prenventDefault()
+   e.preventDeault()
 
       router.push( {
         pathname:"/buscar",
-        query:{searchValue}
+        //query:{searchValue}
       })
-
   }
 
     return (
