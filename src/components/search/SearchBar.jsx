@@ -1,16 +1,14 @@
 import { useState } from 'react'
 import { useRouter } from 'next/router'
-
-import Form from 'react-bootstrap/Form'
-import { getMovieByName } from './getMovieByName'
+import Form from 'react-bootstrap/Form';
 
 export default function SearchBar () {
   const [searchValue, setSearchValue] = useState('')
   const router = useRouter()
 
-  const handlerSubmit = (e) => {
-    e.prenventDefault()
-
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    setSearchValue('')
     router.push({
       pathname: '/buscar',
       query: { searchValue }
@@ -19,7 +17,7 @@ export default function SearchBar () {
 
   return (
     <>
-      <Form className='d-flex' onSubmit={handlerSubmit}>
+      <form className='d-flex' onSubmit={handleSubmit}>
         <Form.Control
           type='search'
           placeholder='Buscar...'
@@ -30,9 +28,7 @@ export default function SearchBar () {
         />
 
         {/* <Button variant="outline-secondary">Search</Button> */}
-      </Form>
-
+      </form>
     </>
-
   )
 }

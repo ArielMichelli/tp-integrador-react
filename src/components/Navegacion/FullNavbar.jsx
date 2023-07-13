@@ -54,7 +54,7 @@ const FullNavBar = () => {
 
           <Nav className='justify-content-end' activeKey='/home'>
             <SearchBar />
-            <Nav.Link className='px-2' href='/buscar' passHref>
+            <Nav.Link className='px-2' href='#'>
               <i className='bi bi-search' />
             </Nav.Link>
             <Nav.Link>
