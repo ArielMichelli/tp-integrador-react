@@ -19,11 +19,12 @@ export default function Buscar (props) {
   },
   [searchValue])
 
+  const filteredMovies = movies.filter(movie => movie.poster_path !==null)
   return (
     <>
       <h1 className='m-0 p-2 text-center text-white bg-dark'>Buscar película por nombre</h1>
       <main className='container-fluid  movies__container justify-center'>
-        <SearchList key={movies.id} movies={movies} />
+        <SearchList movies={filteredMovies} />
       </main>
     </>
   )
