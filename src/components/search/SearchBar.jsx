@@ -24,6 +24,7 @@ export default function SearchBar () {
           className='me-2'
           aria-label='Buscar...'
           value={searchValue}
+          maxLength={30}
           onChange={(e) => setSearchValue(e.target.value)}
         />
 
