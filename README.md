@@ -8,6 +8,7 @@ Ariel Michelli
 Alejandro Luna
 Javier Gil
 Alexis Gabriel Cabrera
+Miriam Moreno
 ```
 
 ## Trello
